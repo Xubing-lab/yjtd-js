@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研究团队 - Janus/微流控实验室</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+      .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            margin-left: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #63b3ed;
+        }
+
+        /* 下方内容区域：左右完全分隔 */
+        .content-wrapper {
+            display: flex;
+            margin-top: 2rem;
+            gap: 2rem;
+            align-items: flex-start;
+        }
+
+        /* 左侧栏：宽度由内容决定 */
+        .sidebar {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 2rem;
+            white-space: nowrap;
+        }
+
+        .sidebar h3 {
+            color: #1a365d;
+            margin-bottom: 0.5rem;
+        }
+
+        .sidebar hr {
+            margin: 1rem 0;
+            border: none;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .sidebar a {
+            display: block;
+            margin-bottom: 1rem;
+            color: #1a365d;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a.active {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .sidebar a:not(.active):hover {
+            background-color: #f1f5f9;
+        }
+
+        /* 右侧内容区：剩余宽度全占 */
+        .main-content {
+            flex: 1;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            padding: 2rem;
+        }
+
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+            border-radius: 6px;
+        }
+      
+      .main-content1 {
+            background: none;
+            box-shadow: none;
+            padding: 0;
+            text-align: center; /* ✅ 新增：让内容居中 */
+        }
+           /* 底部蓝色条 */
+        footer {
+            background-color: #1a365d;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            text-align: center;
+        }
+        
+        .footer-content p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                 <img src="https://youke1.picui.cn/s1/2025/10/30/690360aa2319c.png" alt="Lab Logo">
+                <h1>Janus/微流控实验室</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://xubing-lab.github.io/home/">网站首页</a></li>
+                    <li><a href="https://xubing-lab.github.io/sysjs/">实验室简介</a></li>
+                    <li><a href="https://xubing-lab.github.io/hjqk/">获奖情况</a></li>
+                    <li><a href="https://xubing-lab.github.io/yjtd-js/" style="color: #FFEC50; font-weight: bold;">研究团队</a></li>
+                    <li><a href="https://xubing-lab.github.io/kycg/">科研成果</a></li>
+                    <li><a href="https://xubing-lab.github.io/xmzl/">项目专利</a></li>
+              <li><a href="https://xubing-lab.github.io/rctj/">日常团建</a></li> 
+              </ul>
+            </nav>
+        </div>
+    </header>
+
+<div class="container content-wrapper" style="display: flex; gap: 2rem; align-items: flex-start;">
+
+    <!-- 左侧：教师照片墙 -->
+    <div class="main-content" style="flex: 1; background: none; box-shadow: none; padding: 0;">
+        <section id="teachers" style="background: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 2rem;">
+            <h2 style="color: #1a365d; margin-bottom: 1.5rem;">教师</h2>
+
+           <!-- 照片墙：上下两行，每行并排 2 张，撑满左侧 -->
+<div style="display: flex; flex-direction: column; gap: 2rem;">
+    <!-- 第一行 -->
+    <div style="display: flex; justify-content: space-between; gap: 2rem;">
+        <div style="text-align: center; flex: 1;">
+            <img src="https://youke1.picui.cn/s1/2025/10/31/69047acd908fa.jpeg" alt="教师1" style="width: 100%; max-width: 225px; height: 300px; border-radius: 6px; object-fit: cover;">
+            <p style="margin-top: 0.5rem; font-weight: bold;">许兵</p>
+            <p style="font-size: 0.9rem; color: #555;">2012年合肥工业大学本科毕业，获工学学士学位。</p>
+          <p>2018年3月中国科学技术大学精密机械精密仪器系博士研究生提前毕业，获工学博士学位。</p>
+          <p>2018年4月-2019年3月普林斯顿大学电子工程系博士后。</p>
+          <p>2019年5月-2021年8月中国科学技术大学博士后。</p>
+          <p>2021年9月至今于苏州科技大学机械工程学院任教。</p>
+            <p>主持国家自然科学基金、江苏省自然科学基金、博士后基金、中科大校基金等。</p>
+          <p>在Nano Lett., Adv. Funct. Mater., Light: Sci. & Appl., Small, Lab Chip, Sen. Actuator B. Chem, J Colloid Interface Sci., ACS Adv. Mater. Inter., Adv. Mater. Inter., Opt. Express, Opt. Lett.等国际权威期刊发表与微流控芯片、Janus膜、液体运输相关的高水平论文30余篇，其中发表的Lab Chip（第一作者）被选为封面文章，并被Nature Photonics报道。</p>
+        </div>
+        <div style="text-align: center; flex: 1;">
+            <img src="https://youke1.picui.cn/s1/2025/10/31/69047acda3cde.png" alt="教师2" style="width: 100%; max-width: 225px; height: 300px; border-radius: 6px; object-fit: cover;">
+            <p style="margin-top: 0.5rem; font-weight: bold;">袁妍</p>
+            <p style="font-size: 0.9rem; color: #555;">2007年本科毕业于中国科学技术大学高分子科学与工程系，2012年获博士学位，研究方向为光固化功能涂层。</p>
+          <p>2012年至2018年任教于江南大学化工学院材料系，2019年加入苏州科技大学化学生物与材料工程学院。</p>
+          <p>主要研究方向包括光固化导电传感涂层、石墨烯/聚合物复合功能涂层、生物基光固化抗菌涂层、光固化阻燃涂层及水处理等领域。</p>
+<p>主持国家自然科学基金青年项目、江苏省自然科学基金青年项目、教育部重点实验室开放课题等多项科研项目。</p>
+          <p>在光固化功能材料方向取得系列创新成果，在《Progress in Organic Coatings》《Composites Science and Technology》《RSC Advances》等国际权威期刊发表过多篇高水平学术论文，并获授权国家发明专利多项。</p>
+          <p>参与编著了《功能涂料》（江苏省“十三五”重点规划教材）</p>
+        </div>
+    </div>
+
+   
+        </div>
+        </section>
+    </div>
+
+    <!-- 右侧：导航 -->
+    <!-- 右侧：导航（改背景色） -->
+  <div class="main-content1">
+<div class="sidebar" style="background: #94ACB3; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); padding: 2rem; white-space: nowrap;">
+    <h3 style="color: #FFEC50; margin-bottom: 0.5rem;">研究团队</h3>
+    <hr style="margin: 1rem 0; border: none; border-top: 1px solid #FFEC50;">
+    <a href="https://xubing-lab.github.io/yjtd-js/"  style="color: #FFEC50; font-weight: bold;">教师</a>
+    <a href="https://xubing-lab.github.io/yjtd-xs/" style="display: block; margin-top: 1rem; color: #ffffff; font-weight: bold;">学生</a>
+</div>
+</div>
+</div>
+  <br><br><br><br><br>
+ <!-- 底部蓝色条 -->
+    <footer>
+        <div class="container footer-content">
+            <p><strong>苏州科技大学  Janus/微流控实验室</strong></p>
+            <p>地址：苏州市滨河路298号   联系电话：18856923509</p>
+        </div>
+    </footer>
+</body>
+</html>
